@@ -1,0 +1,53 @@
+/* Reset de margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do corpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Container que envolve a pergunta e os botões */
+.container {
+    text-align: center;
+}
+
+/* Estilo para a pergunta */
+.question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o container dos botões */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative; /* Permite o posicionamento absoluto dos botões */
+    width: 400px; /* Largura fixa para que o botão não se mova para fora */
+    height: 60px; /* Altura suficiente para os botões */
+}
+
+/* Estilo básico dos botões */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative; /* Para garantir que o botão "não" se mova dentro do container */
+}
+
+/* Efeito de hover nos botões */
+button:hover {
+    background-color: #ddd;
+}
